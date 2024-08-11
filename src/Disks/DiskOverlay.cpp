@@ -505,16 +505,12 @@ public:
 
     std::string getFileName() const override { return diff->getFileName(); }
 
-<<<<<<< HEAD
     std::optional<size_t> tryGetFileSize() override
     {
         std::optional<size_t> basefs = base->tryGetFileSize(), difffs = diff->tryGetFileSize();
         if (basefs && difffs) return *basefs + *difffs;
         return {};
     }
-=======
-    size_t getFileSize() override { return base->getFileSize() + diff->getFileSize(); }
->>>>>>> 34a7a884c8e9481a52ba2212ed5524a770557af4
 
 private:
     bool nextImpl() override
