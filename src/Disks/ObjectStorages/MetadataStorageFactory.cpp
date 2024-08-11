@@ -128,12 +128,8 @@ void registerPlainMetadataStorage(MetadataStorageFactory & factory)
         ObjectStoragePtr object_storage,
         bool requires_object_storage) -> MetadataStoragePtr
     {
-<<<<<<< HEAD
         if (!requires_object_storage)
         {
-=======
-        if (!requires_object_storage) {
->>>>>>> 34a7a884c8e9481a52ba2212ed5524a770557af4
             throw Exception(ErrorCodes::LOGICAL_ERROR,
                             "MetadataStorageFactory: requires_object_storage can be false only in case of disk metadata storages");
         }
@@ -171,12 +167,8 @@ void registerMetadataStorageFromStaticFilesWebServer(MetadataStorageFactory & fa
         ObjectStoragePtr object_storage,
         bool requires_object_storage) -> MetadataStoragePtr
     {
-<<<<<<< HEAD
         if (!requires_object_storage)
         {
-=======
-        if (!requires_object_storage) {
->>>>>>> 34a7a884c8e9481a52ba2212ed5524a770557af4
             throw Exception(ErrorCodes::LOGICAL_ERROR,
                             "MetadataStorageFactory: requires_object_storage can be false only in case of disk metadata storages");
         }
